@@ -10,11 +10,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
+ActiveRecord::Schema.define(version: 2018_11_18_192639) do
+=======
 ActiveRecord::Schema.define(version: 2018_11_18_191258) do
+>>>>>>> fa47637b67e8b7be1471c3ac3dc190bab642f0a6
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+<<<<<<< HEAD
+  create_table "bookings", force: :cascade do |t|
+    t.string "description"
+    t.bigint "user_id"
+    t.bigint "grandma_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["grandma_id"], name: "index_bookings_on_grandma_id"
+    t.index ["user_id"], name: "index_bookings_on_user_id"
+  end
+
+=======
+>>>>>>> fa47637b67e8b7be1471c3ac3dc190bab642f0a6
   create_table "grandmas", force: :cascade do |t|
     t.string "name"
     t.string "email"
@@ -39,4 +56,6 @@ ActiveRecord::Schema.define(version: 2018_11_18_191258) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "bookings", "grandmas"
+  add_foreign_key "bookings", "users"
 end
