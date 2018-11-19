@@ -10,11 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2018_11_18_192639) do
+=======
+ActiveRecord::Schema.define(version: 2018_11_18_191258) do
+>>>>>>> fa47637b67e8b7be1471c3ac3dc190bab642f0a6
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+<<<<<<< HEAD
   create_table "bookings", force: :cascade do |t|
     t.string "description"
     t.bigint "user_id"
@@ -25,6 +30,8 @@ ActiveRecord::Schema.define(version: 2018_11_18_192639) do
     t.index ["user_id"], name: "index_bookings_on_user_id"
   end
 
+=======
+>>>>>>> fa47637b67e8b7be1471c3ac3dc190bab642f0a6
   create_table "grandmas", force: :cascade do |t|
     t.string "name"
     t.string "email"
