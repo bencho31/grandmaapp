@@ -1,4 +1,4 @@
-<div class="navbar-wagon navbar-wagon-white">
+<div class="navbar-wagon navbar-fixed-top">
   <!-- Logo -->
  <h2> Mamy Gaby </h2>
 
@@ -37,9 +37,8 @@
       </div>
     <% else %>
       <!-- Login link (when logged out) -->
-      <%= link_to 'Suscribe', new_user_registration_path, class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to t(".sign_in", default: "Login"), user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
-
+      <%= link_to 'Suscribe', new_user_registration_path, class: "navbar-wagon-item navbar-transparent-wagon-link" %>
+      <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-transparent-wagon-link" %>
     <% end %>
   </div>
 
