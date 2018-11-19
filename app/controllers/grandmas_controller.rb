@@ -1,4 +1,6 @@
 class GrandmasController < ApplicationController
+  skip_before_action :authenticate_user!, only: [:index, :show]
+
   def index
     @grandmas = Grandma.where(category: params[:select])
   end
