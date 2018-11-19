@@ -8,7 +8,6 @@ class User < ApplicationRecord
   has_many :grandmas, through: :booking
 
   validates :name, presence: true, uniqueness: true
-  validates :email, presence: true
   validates :about, presence: true
   validates :address, presence: true
 end
