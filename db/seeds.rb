@@ -29,4 +29,8 @@ Grandma.create(
 )
 end
 
+Booking.create(user_id: '1',grandma_id:'1')
+
+
+
 p "Created #{Grandma.count}"
