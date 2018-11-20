@@ -8,7 +8,9 @@
             <p><strong>Cuisine:</strong><strong><%= @grandma.category %></strong></p>
             <strong> <%= @grandma.email %></strong></%>
              <p>Don't fuck with me</p>
-            <a href="#" class="btn btn-danger btn-lg">Booked</a>
+
+             <%= link_to "Book me",new_grandma_booking_path(@grandma), class: "btn btn-danger btn-lg"%>
+
           </div>
          </div>
 
@@ -48,7 +50,6 @@
 
 
 
- <%= link_to "Booking",new_grandma_booking_path(@grandma) %> %>
 
 
 
