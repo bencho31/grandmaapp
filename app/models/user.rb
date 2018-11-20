@@ -5,9 +5,9 @@ class User < ApplicationRecord
 
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
-  has_one :booking
-  has_one :review, through: :booking
-  has_many :grandmas, through: :booking
+  has_many :bookings
+  has_many :reviews, through: :bookings
+  has_many :grandmas, through: :bookings
 
   # validates :name, presence: true, uniqueness: true
   # validates :about, presence: true
