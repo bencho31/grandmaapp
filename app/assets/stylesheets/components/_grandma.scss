@@ -6,19 +6,19 @@
 .grandma {
   margin: 20px;
   width: 360px;
-  height: 600px;
+  height: 500px;
   background: white;
   border-radius: 4px;
   box-shadow:  0 1px 7px rgba(0,0,0,.05);
 }
 
 .grandma-image {
-  height: 75%;
+  height: 60%;
   border-radius: 4px 4px 0 0;
 }
 
 .grandma-content {
-  padding: 20px;
+  padding: 17px;
   height: 25%;
   display: flex;
   flex-direction: column;
@@ -33,6 +33,7 @@
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  padding: 24px;
 }
 
 .grandma-booking {
@@ -40,4 +41,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.btn {
+  margin-top: 63px;
+
 }
