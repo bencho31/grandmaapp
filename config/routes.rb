@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   get :dashboard, to: 'users#dashboard'
   resources :grandmas do
-    resources :bookings, only: [:create]
+    resources :bookings, only: [:create,:show, :new]
   end
   resources :bookings, only: [:show]
 

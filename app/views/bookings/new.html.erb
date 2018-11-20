@@ -1,0 +1,14 @@
+<h1>Bookings#new</h1>
+<p>Find me in app/views/bookings/new.html.erb</p>
+
+<%= simple_form_for ([@grandma,@booking]) do |f| %>
+<%= f.input :description %>
+<%= f.input :time %>
+<%= f.button :submit %>
+<% end %>
+
+
+<%= @grandma.name %>
+<%= @grandma.description %>
+<%= @grandma.email %>
+<%= @grandma.category %>
