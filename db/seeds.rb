@@ -6,26 +6,28 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+ require 'faker'
 
 Grandma.destroy_all
 
-Grandma.create!([{
-  name: "Jaqueline",
-  email: "jaqueline@gmail.com",
-  description: "Sexy and i love to cook",
-  category: "sepharade"
-},
-{
-  name: "Michel",
-  email: "michel@gmail.com",
-  description: "Sexy and i love to cook",
-  category: "sepharade"
-},
-{
-  name: "Jeanne",
-  email: "jeanne@gmail.com",
-  description: "Sexy and i love to cook",
-  category: "ashkenazi"
-}])
+10.times do
+Grandma.create(
+  name:Faker::FunnyName.name,
+  email:Faker::Internet.email,
+  description:Faker::Hobbit.quote,
+  category: "sepharade",
+  photo: "grandma-avatar.jpg"
+)
+end
 
-p "Created #{Grandma.count} movies"
+10.times do
+Grandma.create(
+  name:Faker::FunnyName.name,
+  email:Faker::Internet.email,
+  description:Faker::Hobbit.quote,
+  category: "ashkenazi",
+  photo: "asskaNAZI.jpeg"
+)
+end
+
+p "Created #{Grandma.count}"
