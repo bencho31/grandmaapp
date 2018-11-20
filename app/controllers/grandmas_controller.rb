@@ -2,7 +2,11 @@ class GrandmasController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
-    @grandmas = Grandma.where(category: params[:select])
+    if params[:select]
+      @grandmas = Grandma.where(category: params[:select])
+    else
+      @grandmas = Grandma.all
+    end
   end
 
   def show
