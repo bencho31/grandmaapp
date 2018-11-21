@@ -22,7 +22,7 @@ class GrandmasController < ApplicationController
     @grandma = Grandma.new(grandma_params)
 
     if @grandma.save
-      redirect_to grandma_path(@grandma)
+      redirect_to grandma_path(@grandmandma)
     else
       render :new
     end
