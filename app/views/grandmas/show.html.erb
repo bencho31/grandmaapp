@@ -39,15 +39,17 @@
           <h2>More about <%=@grandma.name %></h2>
           <p class="text-justify">
           <%= @grandma.description %>
-          <% @grandma.reviews.each do |r| %>
-          <%= r.review_comment %>
-          <%= r.rating %>
-          <% end %>
+          <%= @grandma.price %>
           </p>
         </div>
       </div>
     </div>
 </div>
+
+<% @grandma.reviews.each do |r| %>
+          <%= r.review_comment %>
+          <%= r.rating %>
+          <% end %>
 
 
 
