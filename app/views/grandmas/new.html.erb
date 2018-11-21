@@ -6,7 +6,7 @@
 <%= f.input :email %>
 <%= f.input :description %>
 <%= f.input :about %>
-<%= f.collection_radio_buttons :category, [[true, "sepharade"] ,[true, "ashkenazi"]] %>
+<%= f.input :category, as: :radio_buttons %>
 <%= f.input :price %>
 <%= f.input :photo %>
 <%= f.input :photo_cache, as: :hidden %>
