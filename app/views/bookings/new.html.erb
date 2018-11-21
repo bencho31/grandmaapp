@@ -1,14 +1,26 @@
-<h1>Bookings#new</h1>
-<p>Find me in app/views/bookings/new.html.erb</p>
 
-<%= simple_form_for ([@grandma,@booking]) do |f| %>
-<%= f.input :description %>
-<%= f.input :time %>
-<%= f.button :submit %>
+ <div class="text-center margin">
+ <%= image_tag(@grandma.photo, class: "avatar-booking") %>
+<h1> Shalom from <%= @grandma.name %> </h1>
+<p><%= @grandma.description %></p>
+<p><strong><%= @grandma.category %></strong>
+</p>
+<p><strong>Contact:</strong>
+<%= @grandma.email %> </p>
+</div>
+<div class="container">
+  <div class="col-xs-12 col-sm-6 col-md-offset-4 col-md-4">
+    <div class="form-group">
+
+<%= simple_form_for ([@grandma,@booking])do |f| %>
+<%= f.input :description , as: :text %>
+<%= f.input :time, as: :date, label:"Date" %>
+<%= f.button :submit, class: "btn-danger" %>
 <% end %>
+</div>
+</div>
+</div>
 
 
-<%= @grandma.name %>
-<%= @grandma.description %>
-<%= @grandma.email %>
-<%= @grandma.category %>
+
+

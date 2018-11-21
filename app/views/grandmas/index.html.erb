@@ -3,18 +3,22 @@
     <% @grandmas.each do |grandma|  %>
       <div class="col-xs-12 col-sm-6 col-md-4">
          <div class="grandma">
-         <div class="grandma-image" style="background: linear-gradient(to bottom,rgba(20,20,20, 0.8),rgba(76,76,76,0.2) 30%), url(<%= image_path (grandma.photo) %>) center / cover no-repeat;"></div>
-        <div class="grandma-content">
-        <div class="grandma-name"><%= grandma.name %></div>
-        <%= grandma.category %>
-        <div class="grandma-description">
-        <%= grandma.description %>
-        </div>
-        <div class="grandma-booking">
-        <%= link_to "View Details",grandma_path(grandma), class: "btn btn-danger" %>
-        </div>
+          <div class="grandma-image" style="background: linear-gradient(to bottom,rgba(20,20,20, 0.8),rgba(76,76,76,0.2) 30%), url(<%= cl_image_path image_path (grandma.photo) %>) center / cover no-repeat;"></div>
+            <div class="grandma-content">
+              <div class="grandma-name">
+                <%= grandma.name %>
+              </div>
+              <div class="grandma-description">
+              <%= grandma.category %>
+              <%= grandma.description %>
+              </div>
+              <div class="grandma-booking">
+              <%= link_to "View Details",grandma_path(grandma), class: "btn btn-grandma btn-danger" %>
+              </div>
+            </div>
+          </div>
       </div>
+  <% end %>
   </div>
 </div>
-<% end %>
 
