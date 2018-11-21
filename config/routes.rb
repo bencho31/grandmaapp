@@ -4,9 +4,13 @@ Rails.application.routes.draw do
   resources :users, only: :show
   root to: 'pages#home'
   get :dashboard, to: 'users#dashboard'
+  patch :dashboard, to: 'users#update'
   resources :grandmas do
     resources :bookings, only: [:create,:show, :new]
+    resources :reviews, only: [ :new, :create, :show, :update ]
   end
   resources :bookings, only: [:show]
+  resources :reviews, only: [:show, :edit, :update, :destroy]
+
 
 end

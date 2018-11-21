@@ -17,7 +17,7 @@ Grandma.create(
   email:Faker::Internet.email,
   description:Faker::Hobbit.quote,
   category: "sepharade",
-  photo: "grandma-avatar.jpg"
+  photo: "grandma-avatar.png"
 )
 end
 
@@ -27,11 +27,10 @@ Grandma.create(
   email:Faker::Internet.email,
   description:Faker::Hobbit.quote,
   category: "ashkenazi",
-  photo: "asskaNAZI.jpeg"
+  photo: "asskaNAZI.png"
 )
+
 end
 
 
 
-
-p "Created #{Grandma.count}"
