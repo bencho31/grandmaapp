@@ -8,7 +8,15 @@
             <p><strong>Cuisine:</strong><strong><%= @grandma.category %></strong></p>
             <strong> <%= @grandma.email %></strong></%>
              <p>Don't fuck with me</p>
+<<<<<<< HEAD
              <%= link_to "Booking",new_grandma_booking_path(@grandma), class: "btn btn-danger btn-lg" %>
+=======
+
+             <%= link_to "Book me",new_grandma_booking_path(@grandma), class: "btn btn-danger btn-lg"%>
+              <%= link_to "Add Review",new_grandma_review_path(@grandma), class: "btn btn-danger btn-lg"%>
+
+
+>>>>>>> 286f521bade7f30c389251653cdcfcb0efc9ea32
           </div>
          </div>
 
@@ -35,6 +43,10 @@
           <h2>More about <%=@grandma.name %></h2>
           <p class="text-justify">
           <%= @grandma.description %>
+          <% @grandma.reviews.each do |r| %>
+          <%= r.review_comment %>
+          <%= r.rating %>
+          <% end %>
           </p>
         </div>
       </div>
@@ -49,6 +61,10 @@
 
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 286f521bade7f30c389251653cdcfcb0efc9ea32
 
 
 
