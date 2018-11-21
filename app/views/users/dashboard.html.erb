@@ -1,6 +1,6 @@
 <div class="container">
   <div class="form_container text-left">
-      <img src='app/assets/images/Profile_avatar_placeholder_large.png' class="avatar-bordered-large"/>
+      <%= image_tag user_avatar(current_user), class: "avatar-bordered-large" %>
       <div class="form-group justify-center ">
        <h3> Make your profile </h3>
       <%= simple_form_for @user, url: dashboard_path, method: :patch do |f| %>
