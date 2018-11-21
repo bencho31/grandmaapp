@@ -18,8 +18,13 @@ class GrandmasController < ApplicationController
   end
 
   def create
-    @grandma = Grandma.find(params[:id])
-    @grandma.save!
+    @grandma = Grandma.new(params[:id])
+
+    if @grandma.save
+      redirect_to grandma_path(@grandma)
+    else
+      render :new
+    end
   end
 
   def destroy
