@@ -19,11 +19,8 @@ Grandma.create(
   description:Faker::Hobbit.quote,
   category: "sepharade",
   photo: "grandma-avatar.png",
-<<<<<<< HEAD
-  price: (20..100).sample
-=======
   price: 10
->>>>>>> 9d5222860fecdfdd18abe4c428189e9033e2d22d
+
 )
 end
 
@@ -34,12 +31,7 @@ Grandma.create(
   description:Faker::Hobbit.quote,
   category: "ashkenazi",
   photo: "asskaNAZI.png",
-<<<<<<< HEAD
-  price: (20..100).sample
-
-=======
   price: 10
->>>>>>> 9d5222860fecdfdd18abe4c428189e9033e2d22d
 
 )
 

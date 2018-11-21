@@ -1,5 +1,5 @@
 class GrandmasController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:index, :show]
+  skip_before_action :authenticate_user!, only: [:index, :show, :new]
 
   def index
     if params[:select]
@@ -19,6 +19,7 @@ class GrandmasController < ApplicationController
 
   def create
     @grandma = Grandma.new(params[:id])
+    @grandma = Grandma.new(grandma_params)
 
     if @grandma.save
       redirect_to grandma_path(@grandma)
@@ -31,4 +32,11 @@ class GrandmasController < ApplicationController
     @grandma.destroy
   end
 
+private
+
+  def grandma_params
+    params.require(:grandma).permit(
+      :name, :description, :email, :about, :photo
+      )
+  end
 end
