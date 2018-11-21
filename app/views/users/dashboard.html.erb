@@ -1,24 +1,20 @@
 <div class="container">
   <div class="form_container text-left">
-   <form >
-      <img src='https://kitt.lewagon.com/placeholder/users/arthur-littm' class="avatar-bordered-large"/>
+      <img src='app/assets/images/Profile_avatar_placeholder_large.png' class="avatar-bordered-large"/>
       <div class="form-group justify-center ">
        <h3> Make your profile </h3>
-      <%= simple_form_for(@user) do |f| %>
+      <%= simple_form_for @user, url: dashboard_path, method: :patch do |f| %>
         <%= f.input :name %>
         <%= f.input :about  %>
         <%= f.input :address %>
         <%= f.input :photo %>
        <%= f.input :photo_cache, as: :hidden %>
-        <% end %>
       </div>
       <div class="form-group">
        <div>
-        <button class="btn  btn-danger center-block " name="submit" type="submit">
-         Submit
-        </button>
+        <%= f.button :submit, class: "btn  btn-danger center-block" %>
        </div>
       </div>
-     </form>
+    <% end %>
   </div>
 </div>
