@@ -8,7 +8,7 @@
 
 
  require 'faker'
-
+Booking.destroy_all
 Grandma.destroy_all
 
 10.times do
