@@ -29,9 +29,8 @@ Grandma.create(
   category: "ashkenazi",
   photo: "asskaNAZI.png"
 )
+
 end
 
 
 
-
-p "Created #{Grandma.count}"
