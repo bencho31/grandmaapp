@@ -8,8 +8,6 @@ end
 def show
     @booking = Booking.find(params[:id])
     @grandma = Grandma.find(params[:grandma_id])
-
-
 end
 
 def new
