@@ -12,3 +12,48 @@
 .margin{
   margin-bottom: 40px;
 }
+
+.card_form {
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  display: block;
+  align-items: center;
+  justify-content: space-around;
+  margin: 21px;
+  margin-bottom: 91px;
+  height: 426px;
+  margin-left: 106px;
+  color: black;
+}
+
+.petitecard {
+  width: 330px;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  display: block;
+  align-items: center;
+  justify-content: space-around;
+  margin: 21px;
+  margin-bottom: 121px;
+  margin-left: 172px;
+  height: 437px;
+  color: black;
+}
+
+.bannerbook {
+  color: black;
+  text-align: center;
+  height: 100vh;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bannerbook h1 {
+ color: #fe8484
+}
+

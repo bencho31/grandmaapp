@@ -1,25 +1,32 @@
-
- <div class="text-center margin">
- <%= image_tag(@grandma.photo, class: "avatar-booking") %>
-<h1> Shalom from <%= @grandma.name %> </h1>
-<p><%= @grandma.description %></p>
-<p><strong><%= @grandma.category %></strong>
-</p>
-<p><strong>Contact:</strong>
-<%= @grandma.email %> </p>
+<div class="bannerbook" style="background-image:
+linear-gradient(-225deg, rgba(189,194,197,0.4) 0%, rgba(0,36,61,0.4) 50%), url(<%= image_path 'food.jpg' %>);">
+<div class="text-center margin">
+  <div class="card_form">
+    <% @grandma.photo = image_path('thomas') %>
+    <%= image_tag('thomas', crop: :fill, class: "avatar-booking") %>
+    <h1> Shalom from <%= @grandma.name %></h1>
+    <p><%= @grandma.description %></p>
+    <p><strong><%= @grandma.category %></strong></p>
+    <p>
+      <strong>Contact:</strong>
+      <%= @grandma.email %>
+    </p>
+  </div>
 </div>
 <div class="container">
-  <div class="col-xs-12 col-sm-6 col-md-offset-4 col-md-4">
-    <div class="form-group">
+    <div class="petitecard">
+      <div class="form-group">
+        <%= simple_form_for ([@grandma,@booking])do |f| %>
+          <%= f.input :description , as: :text %>
+          <%= f.input :date, as: :string, label:"Date", input_html: {class: "datepicker"} %>
+          <%= f.button :submit, class: "btn-danger" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  </div>
 
-<%= simple_form_for ([@grandma,@booking])do |f| %>
-<%= f.input :description , as: :text %>
-<%= f.input :time, as: :date, label:"Date" %>
-<%= f.button :submit, class: "btn-danger" %>
-<% end %>
-</div>
-</div>
-</div>
+
 
 
 
