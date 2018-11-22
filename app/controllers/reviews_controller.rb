@@ -15,8 +15,8 @@ class ReviewsController < ApplicationController
   end
 
   def create
-    @grandma = Grandma.find(params[:grandma_id])
     @review = Review.new(review_params)
+    @grandma = Grandma.find(params[:grandma_id])
     @review.grandma = @grandma
     @review.user = current_user
     if @review.save
