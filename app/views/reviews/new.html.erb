@@ -1,9 +1,11 @@
-<h1>Reviews#new</h1>
-<p>Find me in app/views/reviews/new.html.erb</p>
-
-
-<%= simple_form_for ([@grandma,@review]) do |f| %>
-<%= f.input :rating %>
-<%= f.input :review_comment %>
-<%= f.button :submit %>
-<% end %>
+<div class="container">
+  <div class="col-xs-12 col-sm-6 col-md-offset-4 col-md-4">
+    <div class="form-group">
+        <%= simple_form_for ([@grandma,@review])do |f| %>
+        <%= f.input :rating %>
+        <%= f.input :review_comment %>
+        <%= f.button :submit, class: "btn-danger" %>
+        <% end %>
+    </div>
+  </div>
+</div>
