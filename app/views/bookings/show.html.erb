@@ -1,8 +1,16 @@
-<h1>Bookings#show</h1>
-<p>Find me in app/views/bookings/show.html.erb</p>
 
 
-<%= @booking %>
-<%= @grandma %>
-<%= @booking.description %>
-<%= @booking.date %>
+<div class="container text-center">
+  <div class="card_form">
+    <% @grandma.photo = image_path('thomas') %>
+    <%= image_tag('thomas', crop: :fill, class: "avatar-booking") %>
+    <div id= "color" >
+<h1>Booking  with the amazing <%= @grandma.name %></h1>
+ </div>
+<p><%= @booking.date %></p>
+ <button id="sweet-alert-demo" class="btn btn-primary">Confirm</button>
+  </div>
+</div>
+
+
+

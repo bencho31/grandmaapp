@@ -22,15 +22,16 @@
   justify-content: space-around;
   margin: 21px;
   margin-bottom: 91px;
-  height: 426px;
+  height: 436px;
   margin-left: 106px;
   color: black;
+  border-radius: 10px;
 }
 
 .petitecard {
   width: 330px;
   background: white;
-  padding: 20px;
+  padding: 47px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
   display: block;
   align-items: center;
@@ -40,6 +41,7 @@
   margin-left: 172px;
   height: 437px;
   color: black;
+  border-radius: 10px;
 }
 
 .bannerbook {
@@ -51,9 +53,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 10px;
 }
 
 .bannerbook h1 {
  color: #fe8484
 }
 
+#color {
+  color: #fe8484
+}
