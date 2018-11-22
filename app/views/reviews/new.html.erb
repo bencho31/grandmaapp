@@ -3,7 +3,7 @@
     <div class="form-group">
         <%= simple_form_for ([@grandma,@review])do |f| %>
         <%= f.input :rating %>
-        <%= f.input :review_comment %>
+        <%= f.input :review_comment,label: 'Comment' %>
         <%= f.button :submit, class: "btn-danger" %>
         <% end %>
     </div>
