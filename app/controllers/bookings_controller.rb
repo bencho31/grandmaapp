@@ -30,6 +30,6 @@ def create
   private
 
   def booking_params
-    params.require(:booking).permit(:description)
+    params.require(:booking).permit(:description,:date)
   end
 end
