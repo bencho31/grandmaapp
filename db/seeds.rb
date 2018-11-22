@@ -11,6 +11,15 @@
 
 Grandma.destroy_all
 
+Grandma.create(
+  name:"Adah Cohen",
+  email:"whatisanemail@gmail.com",
+  description:"I love to cook all kinds of things. Ff you want something, ask me!",
+  category: "sepharade",
+  photo: "grandma-avatar.jpg"
+)
+
+
 10.times do
 Grandma.create(
   name:,

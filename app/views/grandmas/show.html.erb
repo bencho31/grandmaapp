@@ -1,5 +1,5 @@
  <div class="container text-center">
-     <div class="grid">
+     <div class="grid ">
         <div class="card card1">
            <div class="card-content">
 
@@ -20,44 +20,61 @@
          <strong> <p>Meals Cooked</p></strong>
           </div>
         </div>
+
        <div class="card">
         <div class="card-content">
           <h3>758</h3>
          <strong> <p>Happy People</p> </strong>
         </div>
       </div>
+
       <div class="card">
         <div class="card-content">
           <h3>119</h3>
         <strong>  <p>Grand Children</p> </strong>
         </div>
       </div>
-      <div class="card card2">
+
+      <div class="card card2 ">
         <div class="card-content">
           <h2>More about <%=@grandma.name %></h2>
           <p class="text-justify">
           <%= @grandma.description %>
-          <%= @grandma.price %>
           </p>
+          <div>
+           <p class="text-justify">
+          Price:$<%= @grandma.price %>
+          </p>
+
+          </div>
+
         </div>
-      </div>
-      </div>
+    </div>
+</div>
+
       <div class="card card2">
+          <div class="card-content">
         <div class="message">
           <div class="message-name">
           <% @grandma.reviews.each do |r| %>
           </div>
         <div class="message-body">
+          <div class="card-content">
           <p><strong>Comment</strong></p>
           <p>
           <%= r.review_comment %>
           </p>
+       </div>
+         <div class="card-content">
           <p><strong>Rating</strong></p>
           <%= r.rating %>
+        </div>
+      </div>
       </div>
     </div>
     <% end %>
 </div>
+
 
 
 
