@@ -11,7 +11,7 @@ module ApplicationHelper
     if grandma.photo.present?
       cl_image_path grandma.photo, height: 300, width: 400, crop: :fill
     else
-      image_path 'default_avatar.png'
+      image_path  "abuela.svg"
     end
   end
 end

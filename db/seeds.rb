@@ -8,18 +8,16 @@
 
 
  require 'faker'
-Booking.destroy_all
-Review.destroy_all
+
 Grandma.destroy_all
 
 10.times do
 Grandma.create(
-  name:Faker::FunnyName.name,
+  name:,
   email:Faker::Internet.email,
   description:Faker::Hobbit.quote,
   category: "sepharade",
-  photo: "grandma-avatar.png",
-  price: (20..100).sample
+  photo: "grandma-avatar.jpg"
 )
 end
 
@@ -29,12 +27,11 @@ Grandma.create(
   email:Faker::Internet.email,
   description:Faker::Hobbit.quote,
   category: "ashkenazi",
-  photo: "asskaNAZI.png",
-  price: (20..100).sample
-
+  photo: "asskaNAZI.jpeg"
 )
-
 end
 
 
 
+
+p "Created #{Grandma.count}"

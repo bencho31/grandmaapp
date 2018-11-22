@@ -1,15 +1,19 @@
-<h1> Create a new grandma Bitch  </h1>
-
-
-<%= simple_form_for (@grandma) do |f| %>
-<%= f.input :name %>
-<%= f.input :email %>
-<%= f.input :description %>
-<%= f.input :about %>
-<%= f.input :category, as: :radio_buttons %>
-<%= f.input :price %>
-<%= f.input :photo %>
-<%= f.input :photo_cache, as: :hidden %>
-<%= f.button :submit %>
-<% end %>
-
+<div class="container">
+    <div class="card card1">
+      <div class="card-content">
+        <%= image_tag grandma_picture(@grandma), class: "img-circle " %>
+            <h2 class= "text-center">Write some details so that we can know you better</h2>
+                </div>
+              <%= simple_form_for (@grandma) do |f| %>
+              <%= f.input :name %>
+              <%= f.input :email %>
+              <%= f.input :description %>
+              <%= f.input :about %>
+              <%= f.input :category, inclusion: { in: ["sepharade", "ashkenazi"] } %>
+              <%= f.input :price %>
+              <%= f.input :photo %>
+              <%= f.input :photo_cache, as: :hidden %>
+              <%= f.button :submit %>
+            <% end %>
+  </div>
+</div>
