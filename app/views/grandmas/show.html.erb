@@ -1,9 +1,9 @@
  <div class="container text-center">
      <div class="grid">
         <div class="card card1">
+           <div class="card-content">
 
-            <div class="card-content">
-              <%= cl_image_tag(@grandma.photo, class: "img-circle") %>
+             <%= image_tag grandma_picture(@grandma), class: "img-circle" %>
             <h2><%= @grandma.name %></h2>
             <p><strong>Cuisine:</strong><strong><%= @grandma.category %></strong></p>
             <strong> <%= @grandma.email %></strong></%>
@@ -48,15 +48,6 @@
           <%= r.review_comment %>
           <%= r.rating %>
           <% end %>
-
-
-
-
-
-
-
-
-
 
 
 
