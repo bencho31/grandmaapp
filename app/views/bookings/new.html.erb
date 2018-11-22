@@ -14,7 +14,7 @@
 
 <%= simple_form_for ([@grandma,@booking])do |f| %>
 <%= f.input :description , as: :text %>
-<%= f.input :time, as: :date, label:"Date" %>
+<%= f.input :date, label:"Date" %>
 <%= f.button :submit, class: "btn-danger" %>
 <% end %>
 </div>
