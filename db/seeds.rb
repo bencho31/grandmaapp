@@ -11,6 +11,7 @@
 
 Grandma.destroy_all
 
+<<<<<<< HEAD
 Grandma.create(
   name:"LLama Llamastein",
   email:"llama.llama@gmail.com",
@@ -48,29 +49,111 @@ Grandma.create(
 )
 
 10.times do
+=======
+>>>>>>> 7913ab08f2cf4acb147a089f470508014429f76c
 Grandma.create(
   name: Faker::FunnyName.name,
   email:Faker::Internet.email,
+<<<<<<< HEAD
   description:Faker::Hobbit.quote,
   category: "sepharadi",
   photo: "https://res.cloudinary.com/dseugxpvh/image/upload/v1542891565/b9a9d131-9c1b-4990-b3d2-0e0355989468-fotolia_188948342_subscription_monthly_m.jpg",
   price: 23
+=======
+  description:Faker::Lorem.paragraph(2),
+  category: "sepharade",
+  photo: "",
+  price: (20..100).sample
 )
 end
-
-10.times do
 Grandma.create(
   name:Faker::FunnyName.name,
   email:Faker::Internet.email,
+  description:Faker::Lorem.paragraph(2),
+  category: "sepharade",
+  price: (20..100).sample
+  photo: "grandma-avatar.jpg"
+>>>>>>> 7913ab08f2cf4acb147a089f470508014429f76c
+)
+end
+Grandma.create(
+  name:Faker::FunnyName.name,
+  email:Faker::Internet.email,
+<<<<<<< HEAD
   description:Faker::Hobbit.quote,
   category: "ashkenazi",
   photo: "asskaNAZI.jpeg",
   price: 23
 
+=======
+  description:Faker::Lorem.paragraph(2),
+  category: "sepharade",
+  photo: "",
+  price: (20..100).sample
+end
+Grandma.create(
+  name:Faker::FunnyName.name,
+  email:Faker::Internet.email,
+  description:Faker::Lorem.paragraph(2),
+  category: "sepharade",
+  photo: "",
+  price: (20..100).sample
+end
+Grandma.create(
+  name:Faker::FunnyName.name,
+  email:Faker::Internet.email,
+  description:Faker::Lorem.paragraph(2),
+  category: "sepharade",
+  photo: "",
+  price: (20..100).sample
+end
+Grandma.create(
+  name:Faker::FunnyName.name,
+  email:Faker::Internet.email,
+  description:Faker::Lorem.paragraph(2),
+  category: "sepharade",
+  photo: "",
+  price: (20..100).sample
+>>>>>>> 7913ab08f2cf4acb147a089f470508014429f76c
 )
 end
+Grandma.create(
+  name:Faker::FunnyName.name,
+  email:Faker::Internet.email,
+  description:Faker::Lorem.paragraph(2),
+  category: "ashkenazi",
+  photo: "",
+  price: (20..100).sample
 
+)
+end
+Grandma.create(
+  name:Faker::FunnyName.name,
+  email:Faker::Internet.email,
+  description:Faker::Lorem.paragraph(2),
+  category: "ashkenazi",
+  photo: "",
+  price: (20..100).sample
 
+)
+end
+Grandma.create(
+  name:Faker::FunnyName.name,
+  email:Faker::Internet.email,
+  description:Faker::Lorem.paragraph(2),
+  category: "ashkenazi",
+  photo: "",
+  price: (20..100).sample
 
-
+)
+end
+Grandma.create(
+  name:Faker::FunnyName.name,
+  email:Faker::Internet.email,
+  description:Faker::Lorem.paragraph(2),
+  category: "ashkenazi",
+  photo: "",
+  price: (20..100).sample
+)
+end
 p "Created #{Grandma.count}"
