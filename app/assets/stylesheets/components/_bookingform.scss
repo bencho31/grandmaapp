@@ -7,11 +7,29 @@
   border: white 1px solid;
 }
 
+.grid2 {
+  display: grid;
+  grid-template-columns: 400px 1fr 1fr 1fr 1fr;
+  grid-template-rows: 50% 50%;
+  height: 95vh;
+  margin-left: 103px;
+  margin-top: 50px;
 
-
-.margin{
-  margin-bottom: 40px;
 }
+
+.gridprofile {
+  grid-column: 1/span 3;
+  grid-row: 1 /span 2;
+}
+
+.gridform {
+
+  grid-column: 4 /span 1;
+  height: 55vh;
+
+}
+
+
 
 .card_form {
   background: white;
@@ -31,14 +49,14 @@
 .petitecard {
   width: 330px;
   background: white;
-  padding: 47px;
+  padding: 60px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
   display: block;
   align-items: center;
   justify-content: space-around;
   margin: 21px;
   margin-bottom: 121px;
-  margin-left: 172px;
+  // margin-left: 172px;
   height: 437px;
   color: black;
   border-radius: 10px;
@@ -47,13 +65,12 @@
 .bannerbook {
   color: black;
   text-align: center;
-  height: 100vh;
+  height: 100%;
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
   background-size: cover !important;
-  display: flex;
+  display: inline-block;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
 }
 
 .bannerbook h1 {

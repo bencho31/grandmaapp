@@ -1,7 +1,8 @@
 .grid {
   display: grid;
-  grid-template-columns: 400px 1fr 1fr 1fr;
+  grid-template-columns: 400px 1fr 1fr 1fr ;
   grid-template-rows: 50% 50%;
+  height: 95vh
 }
 
 

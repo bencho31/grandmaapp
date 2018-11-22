@@ -8,15 +8,15 @@
 
 
  require 'faker'
-Booking.destroy_all
-Review.destroy_all
+
 Grandma.destroy_all
+
 Grandma.create(
-  name:Faker::FunnyName.name,
+  name:,
   email:Faker::Internet.email,
   description:Faker::Lorem.paragraph(2),
   category: "sepharade",
-  photo: "https://res.cloudinary.com/dseugxpvh/image/upload/v1542891141/te%CC%81le%CC%81chargement.jpg",
+  photo: "",
   price: (20..100).sample
 )
 end
@@ -25,8 +25,8 @@ Grandma.create(
   email:Faker::Internet.email,
   description:Faker::Lorem.paragraph(2),
   category: "sepharade",
-  photo: "https://res.cloudinary.com/dseugxpvh/image/upload/v1542891141/images.jpg",
   price: (20..100).sample
+  photo: "grandma-avatar.jpg"
 )
 end
 Grandma.create(
@@ -34,7 +34,7 @@ Grandma.create(
   email:Faker::Internet.email,
   description:Faker::Lorem.paragraph(2),
   category: "sepharade",
-  photo: "https://res.cloudinary.com/dseugxpvh/image/upload/v1542891141/cute-grandmother-head-avatar-character-450w-759607966.jpg",
+  photo: "",
   price: (20..100).sample
 end
 Grandma.create(
@@ -99,9 +99,6 @@ Grandma.create(
   category: "ashkenazi",
   photo: "",
   price: (20..100).sample
-
 )
 end
-
-
-
+p "Created #{Grandma.count}"
