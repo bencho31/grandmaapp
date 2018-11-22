@@ -1,16 +1,34 @@
 
+ <div class="grid3">
+   <div class="container text-center">
+    <div class="card_form">
+      <div id=successbooking>
+   <%=image_tag('checked.png')%>   <h2>Booking Confirmed</h2>
 
-<div class="container text-center">
-  <div class="card_form">
-    <% image_tag grandma_picture(@grandma) %>
-    <%= image_tag grandma_picture(@grandma), class: "avatar-booking" %>
-    <div id= "color" >
-<h1>Booking  with the amazing <%= @grandma.name %></h1>
- </div>
-<p><%= @booking.display_date %></p>
- <button id="sweet-alert-demo" class="btn btn-primary">Confirm</button>
+      </div>
+      <% image_tag grandma_picture(@grandma) %>
+      <%= image_tag grandma_picture(@grandma), class: "avatar-booking" %>
+        <div id= "color" >
+          <h1>Booking  with the amazing <%= @grandma.name %></h1>
+        </div>
+      <p><%= @booking.display_date %></p>
+      <button id="sweet-alert-demo" class="btn btn-danger">Confirm</button>
+   </div>
+     <div class="cardcall gridlong text-center">
+       <div class="text-lefte">
+       <h1>Need our help?</h1>
+       <p> Call us if you face any issue</p>
+   <div class="text-right">
+   <button class="btn btn-primary "> 09 50 68 77 77</button>
+     </div>
+       </div>
+
+
+
+     </div>
+
   </div>
-</div>
+ </div>
 
 
 

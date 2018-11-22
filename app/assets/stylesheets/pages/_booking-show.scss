@@ -1,0 +1,44 @@
+.grid3 {
+  display: grid;
+  grid-template-columns: 400px 1fr 1fr 1fr 1fr;
+  grid-template-rows: 50% 50%;
+  margin-left: 80px;
+ }
+
+.gridlong {
+  grid-column: 1/span 2;
+  grid-row: 1 /span 1;
+}
+
+.cardcall {
+   background: white;
+  padding: 42px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  display: block;
+  align-items: center;
+  justify-content: space-around;
+  margin: 21px;
+  margin-bottom: 91px;
+  height: 238px;
+  margin-left: 106px;
+  color: black;
+  border-radius: 10px;
+}
+
+
+.text-lefte {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+  margin-bottom: 10px;
+}
+
+#successbooking{
+  color: #009B72;
+  margin-bottom: 10px;
+}
