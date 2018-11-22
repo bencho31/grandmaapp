@@ -2,8 +2,8 @@
 
 <div class="container text-center">
   <div class="card_form">
-    <% @grandma.photo = image_path('thomas') %>
-    <%= image_tag('thomas', crop: :fill, class: "avatar-booking") %>
+    <% image_tag grandma_picture(@grandma) %>
+    <%= image_tag grandma_picture(@grandma), class: "avatar-booking" %>
     <div id= "color" >
 <h1>Booking  with the amazing <%= @grandma.name %></h1>
  </div>
