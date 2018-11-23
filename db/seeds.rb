@@ -46,7 +46,7 @@ Grandma.create(
   email:"whatisanemail@gmail.com",
   description:"I know how to make the best !",
   category: "ashkenazi",
-  remote_photo_url: "http://res.cloudinary.com/dseugxpvh/image/upload/v1542812258/en2vvn0khqxj491lexuk.jpg",
+  photo: "grandma.png",
   price: 23
 )
 
@@ -56,8 +56,8 @@ Grandma.create(
     name: Faker::FunnyName.name,
     email:Faker::Internet.email,
     description:Faker::Hobbit.quote,
-    category: "sepharadi",
-    remote_photo_url: "https://res.cloudinary.com/dseugxpvh/image/upload/v1542891565/b9a9d131-9c1b-4990-b3d2-0e0355989468-fotolia_188948342_subscription_monthly_m.jpg",
+    category: "ashkenazi",
+    photo: "grandma.png",
     price: 23
   )
 end

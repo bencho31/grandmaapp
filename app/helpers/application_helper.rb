@@ -9,7 +9,7 @@ module ApplicationHelper
 
   def grandma_picture(grandma)
     if grandma.photo.present?
-      cl_image_path grandma.photo, height: 300, width: 400, crop: :fill
+      cl_image_path grandma.photo, height: 300, width: 300, crop: :fill
     else
       image_path  "abuela.svg"
     end
